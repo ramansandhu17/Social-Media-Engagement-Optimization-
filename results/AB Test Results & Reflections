@@ -1,0 +1,28 @@
+### A/B Test Results
+
+After training a classification model (Logistic Regression and XGBoost) to predict post-level engagement, I simulated two versions of a social media feed:
+
+- **Baseline Feed**: Ordered by timestamp (default chronological order)
+- **ML-Ranked Feed**: Ordered by predicted engagement probability from the model
+
+### Key Finding
+
+In the current setup, the **ML-Ranked feed did not outperform** the baseline feed. Both produced the same total engagement, resulting in a **0% uplift**.
+
+While this might seem like a failure, it’s a realistic outcome — and it highlights an important product learning:
+
+> **The features used (e.g., post hour, length, hashtags) do not provide strong enough signal to distinguish highly engaging posts.**
+
+---
+
+##  Takeaways & Next Steps
+
+This result reflects a common situation in real-world data science: the first model doesn’t move the needle. What matters is how we respond.
+
+### Next steps to improve performance:
+- **Engineer better features**: e.g., NLP sentiment from `Post Content`, topic clustering, or visual metadata
+- **Use user history**: prior engagement by user, creator-follow relationships
+- **Try temporal decay**: newer posts may inherently attract more engagement
+- **Explore model calibration**: ensemble methods or post-model re-ranking
+
+
