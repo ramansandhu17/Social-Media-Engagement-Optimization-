@@ -83,5 +83,5 @@ These are not required — but demonstrate how the project could be expanded. Th
 ## Author
 
 Ramandeep Brar
-[LinkedIn]([https://linkedin.com/in/your-profile](https://www.linkedin.com/in/ramansandhu1704/)) | [Portfolio]([https://yourportfolio.com](https://www.datascienceportfol.io/ramanbrar))
+[LinkedIn](https://www.linkedin.com/in/ramansandhu1704) | [Portfolio](https://www.datascienceportfol.io/ramanbrar)
 
